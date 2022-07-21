@@ -1,4 +1,4 @@
-import Layout from "./component/component/layout";
+import Layout from "./component/layout";
 import Head from "next/head";
 
 function HomePage() {
