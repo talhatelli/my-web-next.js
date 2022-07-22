@@ -6,7 +6,6 @@ import unfetch from "isomorphic-unfetch";
 function CharacterDetail({ character }) {
   return (
     <Layout>
-      {JSON.stringify(character)}
       <Head>
         <title style={{ color: "white" }}>Anasayfa</title>
       </Head>
