@@ -6,6 +6,7 @@ import unfetch from "isomorphic-unfetch";
 function CharacterDetail({ character }) {
   return (
     <Layout>
+      {JSON.stringify(character)}
       <Head>
         <title style={{ color: "white" }}>Anasayfa</title>
       </Head>
@@ -30,8 +31,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const id = params.slug.slipt("-").slice(-1)[0];
-  const data = await unfetch("https://rickandmortyapi.com/api/episode" + id);
+  const id = params.slug.split("-").slice(-1)[0];
+  console.log(id);
+  const data = await unfetch("https://rickandmortyapi.com/api/character/" + id);
   const character = await data.json();
 
   return {

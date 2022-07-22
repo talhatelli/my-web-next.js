@@ -22,4 +22,6 @@
     "eslint-config-next": "12.2.2",
     "prettier": "^2.7.1"
   }
+ 
+  
 }
