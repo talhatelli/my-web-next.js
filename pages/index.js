@@ -12,7 +12,7 @@ function HomePage(props) {
         <Head>
           <title style={{ color: "white" }}>Anasayfa</title>
         </Head>
-        <h1 className={styles.title}>Welcome to Next.js!</h1>
+        <h1 className={styles.title}>THE RICK AND MORTY </h1>
 
         <ul>
           {props.characters.results.map((character) => (
