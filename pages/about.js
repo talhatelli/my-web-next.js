@@ -1,12 +1,13 @@
 import Layout from "./component/layout";
 import Head from "next/head";
+import Navigation from "./component/navigation";
 
-function HomePage() {
+function About() {
   return (
-    <Layout>
+    <Navigation>
       <Head></Head>
       <h1>Merhaba</h1>
-    </Layout>
+    </Navigation>
   );
 }
-export default HomePage;
+export default About;
